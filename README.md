@@ -22,7 +22,7 @@ The WP Motivator greeting appears before the user's name in the admin toolbar, b
 The WP Motivator message is displayed at the top right of every admin page.
 
 ## Dashboard
-There are two features available for use on the WordPress Dashboard page: a replacement for the native Welcome panel and a sortable dashboard widget. Neither of these are enabled by default.
+There are two features available for use on the WordPress Dashboard page: a replacement for the native Welcome panel and a sortable dashboard widget.
 
 ## Footer
 The WP Motivator footers display at the bottom of every admin page. It replace the default "Thank you for creating with WordPress" footer.
