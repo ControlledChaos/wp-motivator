@@ -31,5 +31,8 @@ The WP Motivator footers display at the bottom of every admin page. It replace t
 * Minimum user role for which the motivator features will display.
 * Custom CSS to add your own styles to the various features.
 
+## Languages
+The content is included in translation functions but no translations from English are provided. One can add content in other languages by using the customizer mode. Greetings, however, only work with any of the English settings.
+
 ## Documentation
 WP Motivator documentation is in the contextual help tab at the upper right corner of the settings page.
