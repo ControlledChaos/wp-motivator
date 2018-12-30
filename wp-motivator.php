@@ -8,7 +8,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       WP Motivator
- * Plugin URI:        http://example.com/wp-motivator-uri/
+ * Plugin URI:        https://github.com/ControlledChaos/wp-motivator
  * Description:       Add random bits of motivation to your admin pages.
  * Version:           1.0.0
  * Author:            Controlled Chaos Design
