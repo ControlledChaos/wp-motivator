@@ -108,7 +108,7 @@ class WP_Motivator_Greeting {
             if ( ! empty( $random ) && 1 == $count ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $greetings ) && ! empty( $greetings ) && ! empty( $random ) ) {
                 // Return the first value of the shuffled array.
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
@@ -129,7 +129,7 @@ class WP_Motivator_Greeting {
             if ( ! empty( $random ) && 1 == $count ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $greetings ) && ! empty( $greetings ) && ! empty( $random ) ) {
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
             } else {
@@ -150,7 +150,7 @@ class WP_Motivator_Greeting {
             if ( ! empty( $random ) && 1 == $count ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $greetings ) && ! empty( $greetings ) && ! empty( $random ) ) {
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
             } else {
@@ -181,7 +181,7 @@ class WP_Motivator_Greeting {
             if ( ! empty( $random ) && 1 == $count  ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $greetings ) && ! empty( $greetings ) && ! empty( $random ) ) {
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
             } else {
@@ -215,7 +215,7 @@ class WP_Motivator_Greeting {
             if ( ! empty( $random ) && 1 == $count ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $greetings ) && ! empty( $greetings ) && ! empty( $random ) ) {
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
             } else {

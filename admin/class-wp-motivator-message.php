@@ -121,7 +121,7 @@ class WP_Motivator_Message {
             if ( ! empty( $random ) && 1 == $count ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $messages ) && ! empty( $messages ) && ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {
@@ -141,7 +141,7 @@ class WP_Motivator_Message {
             if ( ! empty( $random ) && 1 == $count ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $messages ) && ! empty( $messages ) && ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {
@@ -161,7 +161,7 @@ class WP_Motivator_Message {
             if ( ! empty( $random ) && 1 == $count ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $messages ) && ! empty( $messages ) && ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {
@@ -192,7 +192,7 @@ class WP_Motivator_Message {
             if ( ! empty( $random ) && 1 == $count  ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $messages ) && ! empty( $messages ) && ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {
@@ -226,7 +226,7 @@ class WP_Motivator_Message {
             if ( ! empty( $random ) && 1 == $count ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $messages ) && ! empty( $messages ) && ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {
