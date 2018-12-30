@@ -98,10 +98,10 @@ class WP_Motivator_Footer {
             $count   = count( $footers );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {
@@ -118,10 +118,10 @@ class WP_Motivator_Footer {
             $count   = count( $footers );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {
@@ -138,10 +138,10 @@ class WP_Motivator_Footer {
             $count   = count( $footers );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {
@@ -169,10 +169,10 @@ class WP_Motivator_Footer {
             $count  = count( $footers );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count  ) {
+            if ( ! empty( $random ) && 1 == $count  ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {
@@ -203,10 +203,10 @@ class WP_Motivator_Footer {
             $count  = count( $footers );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {

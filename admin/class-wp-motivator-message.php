@@ -118,10 +118,10 @@ class WP_Motivator_Message {
             $count    = count( $messages );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {
@@ -138,10 +138,10 @@ class WP_Motivator_Message {
             $count    = count( $messages );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {
@@ -158,10 +158,10 @@ class WP_Motivator_Message {
             $count  = count( $messages );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {
@@ -189,10 +189,10 @@ class WP_Motivator_Message {
             $count  = count( $messages );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count  ) {
+            if ( ! empty( $random ) && 1 == $count  ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {
@@ -223,10 +223,10 @@ class WP_Motivator_Message {
             $count    = count( $messages );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $message = $messages[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $message = $messages[$random];
             // Otherwise return our fallback message.
             } else {

@@ -105,10 +105,10 @@ class WP_Motivator_Greeting {
             $count     = count( $greetings );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 // Return the first value of the shuffled array.
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
@@ -126,10 +126,10 @@ class WP_Motivator_Greeting {
             $count     = count( $greetings );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
             } else {
@@ -147,10 +147,10 @@ class WP_Motivator_Greeting {
             $count     = count( $greetings );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
             } else {
@@ -178,10 +178,10 @@ class WP_Motivator_Greeting {
             $count  = count( $greetings );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count  ) {
+            if ( ! empty( $random ) && 1 == $count  ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
             } else {
@@ -212,10 +212,10 @@ class WP_Motivator_Greeting {
             $count  = count( $greetings );
 
             // If there is only one key, return that key.
-            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
+            if ( ! empty( $random ) && 1 == $count ) {
                 $greeting = $greetings[0];
             // If there are more than one key, return a random key.
-            } elseif ( is_array( $random ) && ! empty( $random ) ) {
+            } elseif ( ! empty( $random ) ) {
                 $greeting = $greetings[$random];
             // Otherwise return our fallback greeting.
             } else {
