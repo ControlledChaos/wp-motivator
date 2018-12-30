@@ -53,7 +53,9 @@ register_deactivation_hook( __FILE__, 'deactivate_wp_motivator' );
  * The code that runs during plugin uninstall.
  */
 function wp_motivator_uninstall() {
+
 	require_once plugin_dir_path( __FILE__ ) . 'uninstall.php';
+
 }
 
 /**

@@ -27,14 +27,14 @@ class WP_Motivator_Settings {
 
     /**
 	 * Plugin settings.
-	 * 
+	 *
 	 * @since    1.0.0
 	 */
 	public function settings() {
 
 		/**
 		 * Greeting section.
-         * 
+         *
          * @since    1.0.0
 		 */
 		add_settings_section(
@@ -131,7 +131,7 @@ class WP_Motivator_Settings {
 
 		/**
 		 * Message section.
-         * 
+         *
          * @since    1.0.0
 		 */
 		add_settings_section(
@@ -209,7 +209,7 @@ class WP_Motivator_Settings {
 
 		/**
 		 * Dashboard section.
-         * 
+         *
          * @since    1.0.0
 		 */
 		add_settings_section(
@@ -287,7 +287,7 @@ class WP_Motivator_Settings {
 
 		/**
 		 * Admin footer section.
-         * 
+         *
          * @since    1.0.0
 		 */
 		add_settings_section(
@@ -365,7 +365,7 @@ class WP_Motivator_Settings {
 
 		/**
 		 * Options section.
-         * 
+         *
          * @since    1.0.0
 		 */
 		add_settings_section(
@@ -421,10 +421,10 @@ class WP_Motivator_Settings {
 		);
 
     }
-    
+
     /**
      * Greeting section content.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -437,7 +437,7 @@ class WP_Motivator_Settings {
 
     /**
      * Message section content.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -450,7 +450,7 @@ class WP_Motivator_Settings {
 
     /**
      * Dashboard section content.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -463,7 +463,7 @@ class WP_Motivator_Settings {
 
 	/**
      * Admin footer section content.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -476,7 +476,7 @@ class WP_Motivator_Settings {
 
     /**
      * Options section content.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -489,7 +489,7 @@ class WP_Motivator_Settings {
 
     /**
      * Greeting mode dropdown select.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -504,7 +504,7 @@ class WP_Motivator_Settings {
 			'customizer'  => __( 'Customizer', 'wp-motivator' ),
 			'disabled'    => __( 'Disabled', 'wp-motivator' )
 		];
-		
+
 		// Field output.
 		$html = '<p><select id="motivator_greeting_mode" name="motivator_greeting_mode">';
 		foreach ( $options as $option => $label ) {
@@ -519,7 +519,7 @@ class WP_Motivator_Settings {
 
 	/**
 	 * Custom greetings textarea field.
-	 * 
+	 *
 	 * @since    1.0.0
 	 * @param    settings $args
 	 */
@@ -529,7 +529,7 @@ class WP_Motivator_Settings {
 		$list = get_option( 'motivator_greeting_custom' );
 
 		// Field output.
-		$html = sprintf( '<p><label for="motivator_greeting_custom">%1s</label></p>', $args[0] );		
+		$html = sprintf( '<p><label for="motivator_greeting_custom">%1s</label></p>', $args[0] );
 		$html .= '<p><textarea id="motivator_greeting_custom" name="motivator_greeting_custom" value="' . esc_html( $list ) . '" rows="12" cols="100" type="textarea">' . $list . '</textarea></p>';
 
 		echo $html;
@@ -538,7 +538,7 @@ class WP_Motivator_Settings {
 
 	/**
      * Greeting list options dropdown select.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -550,7 +550,7 @@ class WP_Motivator_Settings {
 			'custom_only' => __( 'Custom List Only', 'wp-motivator' ),
 			'custom_plus' => __( 'Custom List + Plugin List', 'wp-motivator' ),
 		];
-		
+
 		// Field output.
 		$html = '<p><select id="motivator_greeting_custom_options" name="motivator_greeting_custom_options">';
 		foreach ( $options as $option => $label ) {
@@ -565,7 +565,7 @@ class WP_Motivator_Settings {
 
 	/**
      * Other language greeting.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -573,7 +573,7 @@ class WP_Motivator_Settings {
 
 		// Field input.
 		$input = get_option( 'motivator_greeting_custom_language' );
-		
+
 		// Field output.
 		$html = sprintf( '<p><label for="motivator_greeting_custom_language">%1s</label></p>', $args[0] );
 		$html .= '<input id="motivator_greeting_custom_language" name="motivator_greeting_custom_language" size="40" type="text" value="' . $input . '" />';
@@ -584,7 +584,7 @@ class WP_Motivator_Settings {
 
     /**
      * Message mode dropdown select.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -599,7 +599,7 @@ class WP_Motivator_Settings {
 			'customizer'  => __( 'Customizer', 'wp-motivator' ),
 			'disabled'    => __( 'Disabled', 'wp-motivator' )
 		];
-		
+
 		// Field output.
 		$html = '<p><select id="motivator_message_mode" name="motivator_message_mode">';
 		foreach ( $options as $option => $label ) {
@@ -614,7 +614,7 @@ class WP_Motivator_Settings {
 
 	/**
 	 * Custom messages textarea field.
-	 * 
+	 *
 	 * @since    1.0.0
 	 * @param    settings $args
 	 */
@@ -633,7 +633,7 @@ class WP_Motivator_Settings {
 
 	/**
      * Message list options dropdown select.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -645,7 +645,7 @@ class WP_Motivator_Settings {
 			'custom_only' => __( 'Custom List Only', 'wp-motivator' ),
 			'custom_plus' => __( 'Custom List + Plugin List', 'wp-motivator' ),
 		];
-		
+
 		// Field output.
 		$html = '<p><select id="motivator_message_custom_options" name="motivator_message_custom_options">';
 		foreach ( $options as $option => $label ) {
@@ -660,7 +660,7 @@ class WP_Motivator_Settings {
 
 	/**
      * Footer mode dropdown select.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -675,7 +675,7 @@ class WP_Motivator_Settings {
 			'customizer'  => __( 'Customizer', 'wp-motivator' ),
 			'disabled'    => __( 'Disabled', 'wp-motivator' )
 		];
-		
+
 		// Field output.
 		$html = '<p><select id="motivator_footer_mode" name="motivator_footer_mode">';
 		foreach ( $options as $option => $label ) {
@@ -690,7 +690,7 @@ class WP_Motivator_Settings {
 
 	/**
 	 * Custom footer textarea field.
-	 * 
+	 *
 	 * @since    1.0.0
 	 * @param    settings $args
 	 */
@@ -700,7 +700,7 @@ class WP_Motivator_Settings {
 		$list = get_option( 'motivator_footer_custom' );
 
 		// Field output.
-		$html = sprintf( '<p><label for="motivator_footer_custom">%1s</label></p>', $args[0] );		
+		$html = sprintf( '<p><label for="motivator_footer_custom">%1s</label></p>', $args[0] );
 		$html .= '<p><textarea id="motivator_footer_custom" name="motivator_footer_custom" value="' . esc_html( $list ) . '" rows="12" cols="100" type="textarea">' . $list . '</textarea></p>';
 
 		echo $html;
@@ -709,7 +709,7 @@ class WP_Motivator_Settings {
 
 	/**
      * Footer list options dropdown select.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -721,7 +721,7 @@ class WP_Motivator_Settings {
 			'custom_only' => __( 'Custom List Only', 'wp-motivator' ),
 			'custom_plus' => __( 'Custom List + Plugin List', 'wp-motivator' ),
 		];
-		
+
 		// Field output.
 		$html = '<p><select id="motivator_footer_custom_options" name="motivator_footer_custom_options">';
 		foreach ( $options as $option => $label ) {
@@ -736,7 +736,7 @@ class WP_Motivator_Settings {
 
 	/**
 	 * Use Welcome panel checkbox.
-	 * 
+	 *
 	 * @since    1.0.0
 	 * @param    settings $args
 	 */
@@ -755,7 +755,7 @@ class WP_Motivator_Settings {
 
 	/**
 	 * Disable welcome panel customizer link.
-	 * 
+	 *
 	 * @since    1.0.0
 	 * @param    settings $args
 	 */
@@ -774,7 +774,7 @@ class WP_Motivator_Settings {
 
 	/**
 	 * Use Dashboard widget checkbox.
-	 * 
+	 *
 	 * @since    1.0.0
 	 * @param    settings $args
 	 */
@@ -793,7 +793,7 @@ class WP_Motivator_Settings {
 
 	/**
      * User capability dropdown select.
-     * 
+     *
      * @since    1.0.0
 	 * @param    settings $args
      */
@@ -811,7 +811,7 @@ class WP_Motivator_Settings {
 		];
 
 		$options = apply_filters( 'motivator_capability', $args );
-		
+
 		// Field output.
 		$html = sprintf( '<p>%1s</p>', esc_html( 'Administrator by default.', 'wp-motivator' ) );
 		$html .= '<p><select id="motivator_capability" name="motivator_capability">';
@@ -827,7 +827,7 @@ class WP_Motivator_Settings {
 
 	/**
 	 * Custom CSS textarea field.
-	 * 
+	 *
 	 * @since    1.0.0
 	 * @param    settings $args
 	 */
@@ -837,7 +837,7 @@ class WP_Motivator_Settings {
 		$css = get_option( 'motivator_css' );
 
 		// Field output.
-		$html = sprintf( '<p><label for="motivator_css">%1s</label></p>', $args[0] );		
+		$html = sprintf( '<p><label for="motivator_css">%1s</label></p>', $args[0] );
 		$html .= '<p><textarea id="motivator_css" name="motivator_css" value="' . esc_html( $css ) . '" rows="12" cols="100" type="textarea">' . $css . '</textarea></p>';
 
 		echo $html;

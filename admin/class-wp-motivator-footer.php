@@ -26,14 +26,14 @@ class WP_Motivator_Footer {
 
     /**
      * Output of the motivational footer.
-     * 
+     *
      * @since      1.0.0
      */
     public static function motivator_footer_output() {
 
         /**
          * Get the footer mode options.
-         * 
+         *
          * @since      1.0.0
          */
         $mode = get_option( 'motivator_footer_mode' );
@@ -41,10 +41,10 @@ class WP_Motivator_Footer {
         /**
          * Arrays of built-in footers per mode.
          * The Innoblazer mode will merge the two arrays.
-         * 
+         *
          * These will be randomized and only one array key (footer)
          * will be display per page load.
-         * 
+         *
          * @since      1.0.0
          */
 
@@ -67,7 +67,7 @@ class WP_Motivator_Footer {
 
         /**
          * Get custom footer mode options.
-         * 
+         *
          * @since      1.0.0
          */
         $custom_input    = get_option( 'motivator_footer_custom' );
@@ -78,13 +78,13 @@ class WP_Motivator_Footer {
 
         /**
          * Return a random message by mode option.
-         * 
+         *
          * We need to count the number of keys in the array(s)
          * because we are using shuffle() to randomize them.
          * If there are less than two keys we get an error from
          * shuffle() so we have to return the 0 index
          * for single-key arrays.
-         * 
+         *
          * @since      1.0.0
          */
 
@@ -98,10 +98,10 @@ class WP_Motivator_Footer {
             $count   = count( $footers );
 
             // If there is only one key, return that key.
-            if ( ! empty( $random ) && 1 == $count ) {
+            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $random ) && ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {
@@ -118,10 +118,10 @@ class WP_Motivator_Footer {
             $count   = count( $footers );
 
             // If there is only one key, return that key.
-            if ( ! empty( $random ) && 1 == $count ) {
+            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $random ) && ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {
@@ -138,10 +138,10 @@ class WP_Motivator_Footer {
             $count   = count( $footers );
 
             // If there is only one key, return that key.
-            if ( ! empty( $random ) && 1 == $count ) {
+            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $random ) && ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {
@@ -169,10 +169,10 @@ class WP_Motivator_Footer {
             $count  = count( $footers );
 
             // If there is only one key, return that key.
-            if ( ! empty( $random ) && 1 == $count  ) {
+            if ( is_array( $random ) && ! empty( $random ) && 1 == $count  ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $random ) && ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {
@@ -203,10 +203,10 @@ class WP_Motivator_Footer {
             $count  = count( $footers );
 
             // If there is only one key, return that key.
-            if ( ! empty( $random ) && 1 == $count ) {
+            if ( is_array( $random ) && ! empty( $random ) && 1 == $count ) {
                 $footer = $footers[0];
             // If there are more than one key, return a random key.
-            } elseif ( ! empty( $random ) ) {
+            } elseif ( is_array( $random ) && ! empty( $random ) ) {
                 $footer = $footers[$random];
             // Otherwise return our fallback message.
             } else {
@@ -223,11 +223,11 @@ class WP_Motivator_Footer {
 
         /**
          * Output the footer text.
-         * 
+         *
          * This text has the priority of 1 in attempt to put it ahead
          * of any other admin_footer_text filters. Thus we have added
          * a blank space following the $footer output.
-         * 
+         *
          * @since      1.0.0
          */
         $footer = apply_filters( 'motivator_footer_output', $footer );
